@@ -52,14 +52,14 @@ class ResourceConfig(object):
 
 	@staticmethod
 	def getInstance():
-		if ResourceConfig.__initialized == False:
-			print("initilizing.... true")
+		if not ResourceConfig.__initialized:
+			print("initializing.... true")
 			ResourceConfig.__initialized = True
 
 			print("creating a new instance")
 			tmpInstance = ResourceConfig.__new__(ResourceConfig)
 
-			print("regestring a new instance")
+			print("registering a new instance")
 			Config.registerResourceConfig(tmpInstance)
 			tmpInstance.setEnvironment(Config.getEnvironment())
 

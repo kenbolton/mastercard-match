@@ -1,0 +1,7 @@
+# MasterCard Match API Python 3 SDK Requirements
+mastercard_api_core>=1.4.0,<1.5.0
+
+# Development/Testing dependencies
+mock>=3.0.0  # For testing compatibility
+setuptools>=40.0.0  # For packaging
+wheel>=0.30.0  # For building distributions
