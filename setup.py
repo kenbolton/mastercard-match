@@ -26,22 +26,34 @@
 
 from setuptools import setup, find_packages
 
-setup(name='mastercard_match',
-      version='1.0.5-python3.5',
-      description='MasterCard API Python SDK',
-      long_description='MasterCard API Python SDK',
-      author='MasterCard Worldwide',
-      author_email='APISupport@mastercard.com',
-      url='https://www.developer.mastercard.com',
-      license='BSD',
-      packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-      classifiers=[
+setup(
+    name='mastercard_match',
+    version='1.0.6',
+    description='MasterCard API Python SDK',
+    long_description='MasterCard API Python SDK',
+    long_description_content_type='text/plain',
+    author='MasterCard Worldwide',
+    author_email='APISupport@mastercard.com',
+    url='https://www.developer.mastercard.com',
+    license='BSD',
+    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Software Development :: Libraries :: Python Modules'
-      ],
-      tests_require=['mock'],
-      install_requires=['mastercard_api_core>=1.4.0,<1.5.0']
-      )
+    ],
+    tests_require=['mock'],
+    install_requires=['mastercard_api_core>=1.4.0,<1.5.0'],
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*'
+)
