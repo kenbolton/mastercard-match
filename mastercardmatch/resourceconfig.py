@@ -84,7 +84,7 @@ class ResourceConfig(object):
 		return cls.name
 
 	def setEnvironment(cls,environment):
-		if environment in list(cls.environmentMap.keys()):
+		if environment in cls.environmentMap:
 			tuple = cls.environmentMap[environment]
 			cls.host = tuple[0]
 			cls.context = tuple[1]
