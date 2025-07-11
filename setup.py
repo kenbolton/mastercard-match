@@ -28,7 +28,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mastercard_match',
-    version='1.0.6',
+    version='1.0.7',
     description='MasterCard API Python SDK',
     long_description='MasterCard API Python SDK',
     long_description_content_type='text/plain',
@@ -54,6 +54,6 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     tests_require=['mock'],
-    install_requires=['mastercard_api_core>=1.4.0,<1.5.0'],
+    install_requires=['mastercard-api-client==2.0.3'],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*'
 )
